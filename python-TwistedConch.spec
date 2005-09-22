@@ -24,30 +24,28 @@ Conch jest implementacj± SSHv2 wykorzystuj±c± Twisted. Zawiera serwer,
 klienta, klienta SFTP i generator kluczy.
 
 %package doc
-Summary:	Documentation for Twisted
-Summary(pl):	Dokumentacja do Twisted
+Summary:	Documentation for TwistedConch
+Summary(pl):	Dokumentacja do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description doc
-Offline documentation for Twisted - event-driven networking framework
-written in Python.
+Offline documentation for TwistedConch.
 
 %description doc -l pl
-Dokumentacja offline do Twisted - narzêdzia do budowania rozproszonych
-aplikacji sieciowych pisanych w Pythonie.
+Dokumentacja offline do TwistedConch.
 
 %package examples
-Summary:	Example programs for Twisted
-Summary(pl):	Programy przyk³adowe do Twisted
+Summary:	Example programs for TwistedConch
+Summary(pl):	Programy przyk³adowe do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
-This package contains example programs for Twisted.
+This package contains example programs for TwistedConch.
 
 %description examples -l pl
-Ten pakiet zawiera przyk³adowe programy dla Twisted.
+Ten pakiet zawiera przyk³adowe programy dla TwistedConch.
 
 %prep
 %setup -q -n %{module}-%{version}
