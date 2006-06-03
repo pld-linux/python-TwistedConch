@@ -17,6 +17,7 @@ BuildRequires:	python-devel >= 2.2
 BuildRequires:	python-TwistedCore >= 2.4.0
 Requires:	python-TwistedCore >= 2.4.0
 Requires:	python-TwistedCore-ssl >= 2.4.0
+Obsoletes:	python-Twisted-conch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
