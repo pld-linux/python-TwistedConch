@@ -6,7 +6,7 @@ Summary:	Twisted SSHv2 implementation
 Summary(pl):	Implementacja SSHv2 dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
-Release:	0.2
+Release:	0.3
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Conch/%{major}/%{module}-%{version}.tar.bz2
@@ -63,12 +63,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{py_sitedir}/twisted,%{py_sitescriptdir},%{_mandir}/man1,%{_examplesdir}/%{name}-%{version}}
 
 python setup.py install \
+	--install-purelib=%{py_sitedir} \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
-
-ln -sf %{py_sitescriptdir}/twisted/conch $RPM_BUILD_ROOT%{py_sitedir}/twisted/conch
 
 install doc/man/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 cp -ar doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -81,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc LICENSE NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{py_sitedir}/twisted/conch
-%{py_sitescriptdir}/twisted
+%{py_sitedir}/twisted/plugins/*
 %{_mandir}/man1/*.1*
 
 %files doc
