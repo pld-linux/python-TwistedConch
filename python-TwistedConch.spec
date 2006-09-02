@@ -13,8 +13,8 @@ Source0:	http://tmrc.mit.edu/mirror/twisted/Conch/%{major}/%{module}-%{version}.
 # Source0-md5:	0236162d53cf7f34ed341d9179e7783b
 URL:		http://twistedmatrix.com/projects/conch/
 BuildRequires:	ZopeInterface
-BuildRequires:	python-devel >= 2.2
 BuildRequires:	python-TwistedCore >= 2.4.0
+BuildRequires:	python-devel >= 2.2
 Requires:	python-TwistedCore >= 2.4.0
 Requires:	python-TwistedCore-ssl >= 2.4.0
 Obsoletes:	python-Twisted-conch
@@ -70,7 +70,7 @@ python setup.py install \
 %py_postclean
 
 install doc/man/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
-cp -ar doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
