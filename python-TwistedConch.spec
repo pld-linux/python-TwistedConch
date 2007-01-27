@@ -1,22 +1,22 @@
 %define 	module	TwistedConch
-%define		major	0.7
+%define		major	0.8
 %define		minor	0
 
 Summary:	Twisted SSHv2 implementation
 Summary(pl):	Implementacja SSHv2 dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
-Release:	0.3
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Conch/%{major}/%{module}-%{version}.tar.bz2
-# Source0-md5:	0236162d53cf7f34ed341d9179e7783b
+# Source0-md5:	f3ccdd8da6b6e26b0a1eae5e54b9b0e2
 URL:		http://twistedmatrix.com/projects/conch/
 BuildRequires:	ZopeInterface
-BuildRequires:	python-TwistedCore >= 2.4.0
-BuildRequires:	python-devel >= 2.2
-Requires:	python-TwistedCore >= 2.4.0
-Requires:	python-TwistedCore-ssl >= 2.4.0
+BuildRequires:	python-TwistedCore >= 2.5.0
+BuildRequires:	python-devel >= 2.5
+Requires:	python-TwistedCore >= 2.5.0
+Requires:	python-TwistedCore-ssl >= 2.5.0
 Obsoletes:	python-Twisted-conch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
 %attr(755,root,root) %{_bindir}/*
+%{py_sitedir}/*.egg-info
 %{py_sitedir}/twisted/conch
 %{py_sitedir}/twisted/plugins/*
 %{_mandir}/man1/*.1*
