@@ -14,7 +14,7 @@ Source0:	http://tmrc.mit.edu/mirror/twisted/Conch/%{major}/%{module}-%{version}.
 URL:		http://twistedmatrix.com/projects/conch/
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 2.5.0
-BuildRequires:	python-devel >= 2.5
+BuildRequires:	python-devel >= 1:2.5
 Requires:	python-TwistedCore >= 2.5.0
 Requires:	python-TwistedCore-ssl >= 2.5.0
 Obsoletes:	python-Twisted-conch
