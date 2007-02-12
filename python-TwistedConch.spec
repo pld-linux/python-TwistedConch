@@ -3,7 +3,7 @@
 %define		minor	0
 
 Summary:	Twisted SSHv2 implementation
-Summary(pl):	Implementacja SSHv2 dla Twisted
+Summary(pl.UTF-8):   Implementacja SSHv2 dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
 Release:	1
@@ -24,33 +24,33 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conch is an SSHv2 implementation using the Twisted framework. It
 includes a server, client, a SFTP client, and a key generator.
 
-%description -l pl
-Conch jest implementacj± SSHv2 wykorzystuj±c± Twisted. Zawiera serwer,
+%description -l pl.UTF-8
+Conch jest implementacjÄ… SSHv2 wykorzystujÄ…cÄ… Twisted. Zawiera serwer,
 klienta, klienta SFTP i generator kluczy.
 
 %package doc
 Summary:	Documentation for TwistedConch
-Summary(pl):	Dokumentacja do TwistedConch
+Summary(pl.UTF-8):   Dokumentacja do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description doc
 Offline documentation for TwistedConch.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja offline do TwistedConch.
 
 %package examples
 Summary:	Example programs for TwistedConch
-Summary(pl):	Programy przyk³adowe do TwistedConch
+Summary(pl.UTF-8):   Programy przykÅ‚adowe do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
 This package contains example programs for TwistedConch.
 
-%description examples -l pl
-Ten pakiet zawiera przyk³adowe programy dla TwistedConch.
+%description examples -l pl.UTF-8
+Ten pakiet zawiera przykÅ‚adowe programy dla TwistedConch.
 
 %prep
 %setup -q -n %{module}-%{version}
