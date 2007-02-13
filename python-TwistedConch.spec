@@ -3,7 +3,7 @@
 %define		minor	0
 
 Summary:	Twisted SSHv2 implementation
-Summary(pl.UTF-8):   Implementacja SSHv2 dla Twisted
+Summary(pl.UTF-8):	Implementacja SSHv2 dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
 Release:	1
@@ -30,7 +30,7 @@ klienta, klienta SFTP i generator kluczy.
 
 %package doc
 Summary:	Documentation for TwistedConch
-Summary(pl.UTF-8):   Dokumentacja do TwistedConch
+Summary(pl.UTF-8):	Dokumentacja do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -42,7 +42,7 @@ Dokumentacja offline do TwistedConch.
 
 %package examples
 Summary:	Example programs for TwistedConch
-Summary(pl.UTF-8):   Programy przykładowe do TwistedConch
+Summary(pl.UTF-8):	Programy przykładowe do TwistedConch
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
