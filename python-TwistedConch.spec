@@ -6,7 +6,7 @@ Summary:	Twisted SSHv2 implementation
 Summary(pl.UTF-8):	Implementacja SSHv2 dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Conch/%{major}/%{module}-%{version}.tar.bz2
