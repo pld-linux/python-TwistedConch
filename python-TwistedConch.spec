@@ -79,7 +79,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
 %attr(755,root,root) %{_bindir}/*
+%if "%{py_ver}" > "2.4"
 %{py_sitedir}/*.egg-info
+%endif
 %{py_sitedir}/twisted/conch
 %{py_sitedir}/twisted/plugins/*
 %{_mandir}/man1/*.1*
