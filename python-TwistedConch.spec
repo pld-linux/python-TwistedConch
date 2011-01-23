@@ -15,6 +15,7 @@ URL:		http://twistedmatrix.com/trac/wiki/TwistedConch
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 2.5.0
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 Requires:	python-TwistedCore >= 2.5.0
 Requires:	python-TwistedCore-ssl >= 2.5.0
 Obsoletes:	python-Twisted-conch
