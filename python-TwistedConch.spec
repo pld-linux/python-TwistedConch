@@ -12,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://twistedmatrix.com/Releases/Conch/%{major}/%{module}-%{version}.tar.bz2
 # Source0-md5:	0d1c4c72302d8af6036cb897438323b7
 URL:		http://twistedmatrix.com/trac/wiki/TwistedConch
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 13.0.0
 BuildRequires:	python-devel >= 1:2.5
